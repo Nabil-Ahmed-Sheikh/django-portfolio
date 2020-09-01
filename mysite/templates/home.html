@@ -179,46 +179,19 @@
             
                 <!--First slide-->
                 <div class="carousel-item active">
-            
-                    <div class="col-md-3" style="float:left">
-                    <div class="card profile-card-2">
-                        <div class="card-body pt-5">
-                            <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
-                            <h5 class="card-title">Landon Hunt</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    </div>
-            
-                    <div class="col-md-3" style="float:left">
-                    <div class="card profile-card-2">
-                        <div class="card-body pt-5">
-                            <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
-                            <h5 class="card-title">Landon Hunt</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    </div>
-            
-                    <div class="col-md-3" style="float:left">
-                    <div class="card profile-card-2">
-                        <div class="card-body pt-5">
-                            <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
-                            <h5 class="card-title">Landon Hunt</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    </div>
                     
+                    {% for testimonial in testimonies %}
                     <div class="col-md-3" style="float:left">
                     <div class="card profile-card-2">
                         <div class="card-body pt-5">
-                            <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile"/>
-                            <h5 class="card-title">Landon Hunt</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <img src="{{testimonial.img.url}}" alt="profile-image" class="profile"/>
+                            <h5 class="card-title">{{testimonial.person_name}}</h5>
+                            <p class="card-text">{{testimonial.testimony}}</p>
                         </div>
                     </div>
                     </div>
+                    {% endfor %}
+            
             
                 </div>
                 <!--/.First slide-->
@@ -285,9 +258,12 @@
         <div class="container">
             <h1 class="testimonial-header">Technologies</h1>
             <div class="row skill-row">
+                {% for tech in technologies %}
                 <div class="col">
-                    <img src="{% static 'image/kisspng-laravel-software-framework-php-web-framework-model-framework-5b1fe07e5704e5.2332130115288157423564.png' %}" alt="" class="skill-img">
+                    <img src="{{tech.img.url}}" alt="" class="skill-img">
                 </div>
+                {% endfor %}
+                
                 <div class="col">
                     <img src="{% static 'image/kisspng-eclipse-foundation-integrated-development-environm-eclipse-5ac24212bdda89.2215472915226803387777.png' %}" alt="" class="skill-img">
                 </div>
