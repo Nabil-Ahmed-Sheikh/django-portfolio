@@ -1,0 +1,162 @@
+/* Navbar */
+.navbar-top {
+    background-color: #f5ecdb;
+    min-height: 10vh;
+}
+
+
+.menu-icon {
+    color: #f26200;
+}
+
+.menu-icon {
+    padding-left: 2rem;
+}
+
+.menu-item{
+    padding-right: 2.5rem;
+    padding-left: 1.5rem;
+}
+
+
+/* Home Message */
+.home-message-container{
+    min-height: 65vh;
+    background-color: #f5ecdb;
+    text-align: center;
+}
+
+.home-message-header{
+    font-family: 'Krona One', sans-serif;
+    font-weight: bold;
+    padding-top: 8rem;
+    color: #f26200;
+}
+
+.play-btn{
+    padding: 2rem;
+}
+
+.video-icon{
+    color: #f26200;
+}
+
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.modal-body {
+position:relative;
+padding:0px;
+}
+
+.close {
+position:absolute;
+right:-30px;
+top:0;
+z-index:999;
+font-size:2rem;
+font-weight: normal;
+color:#fff;
+opacity:1;
+}
+
+
+
+/* Portfolio  */
+
+.portfolio-header{
+    font-family: 'Krona One', sans-serif;
+    padding: 2rem;
+    color: #37383b;
+}
+
+
+.portfolio-container {
+    min-height: 60vh;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.portfolio-deck {
+    text-align: center;
+    padding: 1rem;
+}
+
+.portfolio-card {
+  max-height: 90%;
+}
+
+.card-image:hover {
+    transform: scale(1.1);
+}
+
+
+
+/*Testimonials  */
+
+.testimonial-container{
+    min-height: 40vh;
+    background-color: #f5ecdb;
+}
+
+
+.testimonial-header{
+    font-family: 'Krona One', sans-serif;
+    padding: 1rem;
+    font-size: x-large;
+    color: #37383b;
+}
+
+.carousel-container{
+    padding-bottom: 1rem;
+}
+
+
+/*Profile card 2*/
+
+.profile-card-2 .card-body{
+    position:relative;
+}
+.profile-card-2 .profile {
+  border-radius: 50%;
+  position: relative;
+  max-width: 90px;
+  max-height: 90px;
+  border: 3px solid rgba(255, 255, 255, 1);
+}
+.profile-card-2 h5{
+    font-weight:600;
+    color:#f26200;
+}
+.profile-card-2 .card-text{
+    font-weight:300;
+    font-size:15px;
+}
+
+
+
+
+/*Skills  */
+.skill-header{
+    font-family: 'Krona One', sans-serif;
+    padding: 1rem;
+    font-size: x-large;
+}
+
+.skill-container{
+    min-height: 30vh;
+    text-align: center;
+}
+
+.skill-img{
+    width: 100px;
+}
+
+.skill-row{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
